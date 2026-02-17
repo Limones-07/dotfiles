@@ -1,0 +1,35 @@
+
+font=JetBrains
+
+background-color=#EFF1F5FF
+text-color=#4C4F69FF
+#background-color=#303446
+#text-color=#c6d0f5
+
+width=400
+height=600
+
+border-size=2
+border-color=#9CA0B0FF
+#border-color=#737994
+border-radius=6
+
+progress-color=over #04A5E5
+#progress-color=over #99d1db
+
+default-timeout=7000
+
+layer=overlay
+
+[urgency=low]
+default-timeout=3000
+
+[urgency=critical]
+background-color=#D20F39FF
+text-color=#dce0e8ff
+border-color=#E64553FF
+#background-color=#f38ba8
+#text-color=#c6d0f5
+#border-color=#eba0ac
+default-timeout=0
+
