@@ -4,6 +4,11 @@ theme = Catppuccin Macchiato
 # Enable shell integration injection for Bash
 shell-integration = bash
 
+# Disable ligatures
+#font-feature = -calt
+
+# Disable pwd inheriting
+window-inherit-working-directory = false
 
 
 # Default config contents
