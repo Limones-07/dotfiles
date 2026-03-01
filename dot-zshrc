@@ -1,0 +1,48 @@
+# A really cool comment
+
+# Exports needed everywhere
+export VISUAL=vim
+
+# If not running interactively, stop here
+[[ $- != *i* ]] && return
+
+# Mess with zsh's fpath
+fpath+=($HOME/.zsh/pure)
+
+# Enable autocomplete
+autoload -Uz compinit
+compinit
+
+# Enable command correction
+setopt correctall
+
+# Don't use vim keybindings on the shell (hopefully for now)
+bindkey -e
+
+# Aliases
+alias ls='ls --color=auto'
+alias grep='grep --color=auto'
+alias steam-boot='gamescope -W 1920 -H 1080 -w 1920 -h 1080 -f --force-grab-cursor -e -- prime-run steam -tenfoot'
+
+# Functions
+chkbat() {
+    local SYSFS_BAT_PATH="/sys/class/power_supply/BAT0"
+    echo "Charge full: $(cat ${SYSFS_BAT_PATH}/charge_full)"
+    echo "Charge now: $(cat ${SYSFS_BAT_PATH}/charge_now)"
+    echo "Capacity: $(cat ${SYSFS_BAT_PATH}/capacity)"
+    echo "Status: $(cat ${SYSFS_BAT_PATH}/status)"
+}
+
+# Enable zsh-autosuggestion plugin
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# Enable zsh-syntax-highlighting plugin
+source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# If running on a TTY, stop here
+[[ $TERM == linux ]] && return
+
+# Enable the theme (in this case, Pure)
+autoload -U promptinit
+promptinit
+prompt pure

@@ -1,8 +1,8 @@
 # Set the theme (builtin)
 theme = Catppuccin Macchiato
 
-# Enable shell integration injection for Bash
-shell-integration = bash
+# Enable shell integration injection for zsh
+shell-integration = zsh
 
 # Disable ligatures
 #font-feature = -calt
