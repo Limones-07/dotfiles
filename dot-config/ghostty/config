@@ -10,6 +10,8 @@ shell-integration = zsh
 # Disable pwd inheriting
 window-inherit-working-directory = false
 
+# Set background opacity
+background-opacity = 0.9
 
 # Default config contents
 
