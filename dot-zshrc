@@ -1,7 +1,8 @@
 # A really cool comment
 
 # Exports needed everywhere
-export VISUAL=vim
+export VISUAL=nvim
+export PATH=$PATH:$HOME/.cargo/bin
 
 # If not running interactively, stop here
 [[ $- != *i* ]] && return
@@ -22,6 +23,8 @@ bindkey -e
 # Aliases
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
+alias eww='~/.config/eww/eww'
+alias vim='echo "Use nvim instead."'
 alias steam-boot='gamescope -W 1920 -H 1080 -w 1920 -h 1080 -f --force-grab-cursor -e -- prime-run steam -tenfoot'
 
 # Functions

@@ -1,0 +1,15 @@
+(defwindow bar
+           :monitor 0
+	   :stacking "bottom"
+	   :exclusive true
+	   :focusable "none"
+	   :namespace "eww-bar"
+	   :geometry (geometry :x "0px"
+	                       :y "7px"
+			       :width "1906px"
+			       :height "40px"
+			       :anchor "top center")
+  "Insert a beautiful bar here")
+
+
+(defvar bar_hidden true)
