@@ -24,7 +24,8 @@ bindkey -e
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 alias eww='~/.config/eww/eww'
-alias vim='echo "Use nvim instead."'
+alias nvim='bob run nightly --'
+alias nvim-stable='bob run stable --'
 alias steam-boot='gamescope -W 1920 -H 1080 -w 1920 -h 1080 -f --force-grab-cursor -e -- prime-run steam -tenfoot'
 
 # Functions
