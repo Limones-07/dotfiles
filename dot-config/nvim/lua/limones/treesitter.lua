@@ -6,6 +6,8 @@ local ts_languages = {
     "yuck",
     "scss",
     "css",
+    "hyprlang",
+    "dockerfile",
 }
 
 require("nvim-treesitter").install(ts_languages)

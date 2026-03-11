@@ -1,6 +1,7 @@
 local language_servers = {
     "lua_ls",
     "pyright",
+    "docker-language-server",
 }
 require("mason").setup()
 
