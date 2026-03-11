@@ -11,7 +11,7 @@ shell-integration = zsh
 window-inherit-working-directory = false
 
 # Set background opacity
-background-opacity = 0.9
+background-opacity = 0.9375
 
 # Default config contents
 
