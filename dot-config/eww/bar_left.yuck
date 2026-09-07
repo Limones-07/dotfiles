@@ -1,0 +1,6 @@
+
+(defwidget bar-left []
+  (box :hexpand true
+       :halign "start"
+       :class "bar-left"
+    "bar left"))

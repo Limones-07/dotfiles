@@ -1,0 +1,6 @@
+
+(defwidget bar-center []
+  (box :hexpand true
+       :halign "center"
+       :class "bar-center"
+    "bar center"))

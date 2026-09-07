@@ -1,15 +1,26 @@
+(include "./bar_left.yuck")
+(include "./bar_center.yuck")
+(include "./bar_right.yuck")
+
+(deflisten data :initial "Waiting..."
+  `./data_poller`)
+
 (defwindow bar
            :monitor 0
-	   :stacking "bottom"
-	   :exclusive true
-	   :focusable "none"
-	   :namespace "eww-bar"
-	   :geometry (geometry :x "0px"
-	                       :y "7px"
-			       :width "1906px"
-			       :height "40px"
-			       :anchor "top center")
-  "Insert a beautiful bar here")
+           :stacking "bottom"
+           :exclusive true
+           :focusable "none"
+           :namespace "eww-bar"
+           :geometry (geometry :x "0px"
+                               :y "7px"
+                               :width "1906px"
+                               :height "40px"
+                               :anchor "top center")
+  (centerbox :orientation "horizontal"
+             :hexpand true
+             :class "bar"
+    (bar-left)
+    (bar-center)
+    (bar-right)))
 
 
-(defvar bar_hidden true)

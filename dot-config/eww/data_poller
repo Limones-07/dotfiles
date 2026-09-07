@@ -1,0 +1,21 @@
+#!/usr/bin/env python
+
+import json
+import sys
+import time
+
+# def get_workspaces() -> str:
+
+
+def main() -> str:
+    data: dict = dict()
+    
+    data["status_msg"] = "Running!"
+
+    return json.dumps(data)
+
+if __name__ == "__main__":
+    while True:
+        print(main())
+        sys.stdout.flush()
+        time.sleep(0.1)

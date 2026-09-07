@@ -1,0 +1,11 @@
+
+(defpoll time :interval "1s"
+              :initial "XX:XX"
+              :run-while true
+  `date +%H:%M:%S`)
+
+(defwidget bar-right []
+  (box :hexpand true
+       :halign "end"
+       :class "bar-right"
+    "${time}"))
