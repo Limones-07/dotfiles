@@ -1,10 +1,3 @@
-local language_servers = {
-    "lua_ls",
-    "pyright",
-    "docker-language-server",
-}
-require("mason").setup()
-
 local cmp = require("cmp")
 cmp.setup({
     snippet = {
@@ -13,6 +6,7 @@ cmp.setup({
         end,
     },
     mapping = cmp.mapping.preset.insert({
+        ["<C-i>"] = cmp.mapping.complete(),
         ["<C-n>"] = cmp.mapping.select_next_item(),
         ["<C-p>"] = cmp.mapping.select_prev_item(),
         ["<Tab>"] = cmp.mapping(function(fallback)
@@ -53,8 +47,3 @@ cmp.setup({
     }),
 })
 
-local capabilities = require("cmp_nvim_lsp").default_capabilities()
-for _, ls in ipairs(language_servers) do
-    vim.lsp.config(ls, { capabilities = capabilities })
-    vim.lsp.enable(ls)
-end

@@ -29,6 +29,10 @@
       "rev": "12c004cde3f36cb1d57242f1e6aac46b09a0e5b4",
       "src": "https://github.com/catppuccin/nvim"
     },
+    "nvim-autopairs": {
+      "rev": "59bce2eef357189c3305e25bc6dd2d138c1683f5",
+      "src": "https://github.com/windwp/nvim-autopairs"
+    },
     "nvim-cmp": {
       "rev": "da88697d7f45d16852c6b2769dc52387d1ddc45f",
       "src": "https://github.com/hrsh7th/nvim-cmp"
@@ -56,6 +60,14 @@
     "undotree": {
       "rev": "d8f99084d98c32f651860eb0baaf89759f91debc",
       "src": "https://github.com/mbbill/undotree"
+    },
+    "vim-liquid": {
+      "rev": "ca82e18f299c10c10f3f9ee2e0a0804dc3dd16dc",
+      "src": "https://github.com/tpope/vim-liquid"
+    },
+    "vim-startuptime": {
+      "rev": "c12649b2458e34ec6dde8f1bdfe830661a613a6b",
+      "src": "https://github.com/dstein64/vim-startuptime"
     },
     "yuck.vim": {
       "rev": "9b5e0370f70cc30383e1dabd6c215475915fe5c3",

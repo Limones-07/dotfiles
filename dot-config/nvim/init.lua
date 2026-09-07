@@ -11,13 +11,15 @@ vim.pack.add({
     { src = gh("mason-org/mason.nvim") },
     { src = gh("nvim-treesitter/nvim-treesitter"), build = ":TSUpdate" },
     { src = gh("elkowar/yuck.vim") },
+    { src = gh("tpope/vim-liquid") },
+    { src = gh("windwp/nvim-autopairs") },
     { src = gh("neovim/nvim-lspconfig") },
 
-    { src = gh("hrsh7th/cmp-nvim-lsp") },
-    { src = gh("hrsh7th/cmp-buffer") },
-    { src = gh("hrsh7th/cmp-path") },
-    { src = gh("hrsh7th/cmp-cmdline") },
-    { src = gh("hrsh7th/nvim-cmp") },
+    { src = gh("hrsh7th/cmp-nvim-lsp"), opt = true },
+    { src = gh("hrsh7th/cmp-buffer"), opt = true },
+    { src = gh("hrsh7th/cmp-path"), opt = true },
+    { src = gh("hrsh7th/cmp-cmdline"), opt = true },
+    { src = gh("hrsh7th/nvim-cmp"), opt = true },
 })
 
 require("limones")
