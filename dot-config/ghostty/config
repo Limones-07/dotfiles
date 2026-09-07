@@ -10,8 +10,13 @@ shell-integration = zsh
 # Disable pwd inheriting
 window-inherit-working-directory = false
 
+# Self explanatory...
+quit-after-last-window-closed = false
+quit-after-last-window-closed-delay = 20s
+
 # Set background opacity
-background-opacity = 0.9375
+# background-opacity = 0.9375
+background-opacity = 0.9
 
 # Default config contents
 

@@ -1,8 +1,8 @@
 # A really cool comment
 
 # Exports needed everywhere
-export VISUAL=nvim
-export PATH=$PATH:$HOME/.cargo/bin
+export VISUAL='bob run nightly'
+export PATH=$PATH:$HOME/.cargo/bin:$HOME/.local/bin
 
 # If not running interactively, stop here
 [[ $- != *i* ]] && return
@@ -25,8 +25,7 @@ alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 alias eww='~/.config/eww/eww'
 alias nvim='bob run nightly --'
-alias nvim-stable='bob run stable --'
-alias steam-boot='gamescope -W 1920 -H 1080 -w 1920 -h 1080 -f --force-grab-cursor -e -- prime-run steam -tenfoot'
+#alias steam-boot='gamescope -W 1920 -H 1080 -w 1920 -h 1080 -f --force-grab-cursor -e -- prime-run steam -tenfoot'
 
 # Functions
 chkbat() {
